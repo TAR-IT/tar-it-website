@@ -137,7 +137,7 @@ background-image: url(/images/icons/linkedin_icon.png);
   height: 250px;
 }
 
-.services-container {
+.interests-container {
   width: 50%;
 }
 
@@ -300,7 +300,7 @@ nav {background-color: yellow}
 #content-section {background-color: red;}
 #about-section {background-color: lightcoral;}
 #portrait {background-color: hotpink;}
-#services-section {background-color: darkorchid;}
+#interests-section {background-color: darkorchid;}
 #guideline-section {background-color: slateblue;}
 #experience-section {background-color: rebeccapurple;}
 .experience-container {background-color: bisque;}
