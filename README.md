@@ -1,5 +1,5 @@
 # TAR-IT Website
-This is my personal portfolio/blog webpage hosted by GitHub Pages. No framework used, no bootstrap, bare hand coding for learning purposes.
+This is my personal portfolio/blog webpage hosted by GitHub Pages. No framework used, no bootstrap, bare hand coding for learning purposes. It includes a potfolio of some projects of mine.
 ## UX
 No user experience requirements have been set yet.
 ### User Stories
