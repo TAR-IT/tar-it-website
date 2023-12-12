@@ -56,13 +56,17 @@ a {
 }
 
 .container {
+  outline: dotted var(--tar-it_color-white) 3px;
+}
+
+.flex {
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: center;
 }
 
-.container-reverse {
+.flex-reverse {
   display: flex;
   flex-direction: row-reverse;
   align-items: center;
