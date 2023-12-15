@@ -1,5 +1,5 @@
 # TAR-IT - official website
-This is my personal portfolio/blog webpage hosted by netlify. No framework used, no bootstrap, bare hand coding for learning purposes. It includes a potfolio of some projects of mine.
+This is my personal portfolio webpage hosted by netlify. No frameworks used, no bootstrap, bare hand html, css and js for learning purposes. It includes a portfolio of some projects of mine, my certificates and experiences, as well as (soon) a little blog.
 
 ## Table of Contents
 1. [Technologies Used](#technologies-used)
@@ -16,8 +16,6 @@ This is my personal portfolio/blog webpage hosted by netlify. No framework used,
 ## Technologies Used
 - [HTML](https://www.w3.org/)
     - The project uses **HTML** to create the page.
-- [Bootstrap](https://getbootstrap.com/)
-	- The project uses the **Bootstrap 4.5.2** framework for styles mainly.
 - [CSS](https://www.w3.org/)
     - The project uses custom **CSS** in addition to Bootstrap.
 - [JavaScript](https://developer.mozilla.org/bm/docs/Web/JavaScript)
