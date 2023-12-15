@@ -15,4 +15,14 @@
         <changefreq>weekly</changefreq>
         <priority>0.7</priority>
     </url>
+    <url>
+        <loc>https://tar-it.com/legal</loc>
+        <changefreq>weekly</changefreq>
+        <priority>0.4</priority>
+    </url>
+    <url>
+        <loc>https://tar-it.com/privacy</loc>
+        <changefreq>weekly</changefreq>
+        <priority>0.4</priority>
+    </url>
 </urlset>
