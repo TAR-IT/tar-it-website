@@ -11,7 +11,7 @@
   }
   
 /* ---------------------- GLOBAL STYLES ---------------------- */
-  
+
 body {
     --tar-it_color-white: #FFFFFF; /* defines a variable for the color white */
     --tar-it_color-black: #000000; /* defines a variable for the color black */
@@ -29,7 +29,7 @@ body {
 }
 
 h1 {
-  font-size: calc(4vw);
+  font-size: calc(2rem + 1vw);
   text-transform: uppercase;
 }
 
@@ -48,7 +48,7 @@ h4 {
   text-transform: uppercase;
 }
 
-a {
+li a {
   color: var(--tar-it_color-white);
   margin: 10px;
   padding: 10px;
@@ -91,7 +91,14 @@ a {
   position: sticky;
 }
 
+#title {
+  width: fit-content;
+}
+
 #header-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   text-align: center;
 }
 
@@ -171,14 +178,15 @@ background-image: url(/img/ico/linkedin_icon.png);
 footer {
   background-color: var(--tar-it_color-black);
   margin: 0;
-  padding: 1px;
+  padding-top: 10px;
   position: sticky;
   bottom: 0;
-  text-align: center;}
+  text-align: center;
+}
 
-  footer p {
-    font-size: calc(0.5rem + 0.4vw);
-  }
+footer p {
+  font-size: calc(0.5rem + 0.4vw);
+}
 
 /* ---------------------- WEBVIEW STYLES ---------------------- */
 
@@ -187,10 +195,6 @@ only screen and (min-width:1081px) {
 
   #sidebar {
     width: 25vw;
-  }
-
-  #titel {
-    font-size: 4vw;
   }
 
   #navigation-section ul {
@@ -271,7 +275,7 @@ only screen and (max-width:1080px) {
     border-right: .60em solid var(--tar-it_color-white); /* The typwriter cursor */
     white-space: nowrap; /* Keeps the content on a single line */
     margin: 0 auto; /* Gives that scrolling effect as the typing happens */
-    letter-spacing: .15em; /* Adjust as needed */
+    letter-spacing: .2em; /* Adjust as needed */
     animation: 
       typing 3s steps(7, end),
       blink-caret .5s step-end infinite;
@@ -290,13 +294,13 @@ only screen and (max-width:1080px) {
   }
 
 /* ---------------------- MAINTENANCE STYLES ---------------------- */
-
-/* head {background-color: grey;}
+/* 
+head {background-color: grey;}
 body {background-color: grey;}
 #wrapper {background-color: turquoise;}
 #sidebar {background-color: blue;}
 #header-section {background-color: green;}
-#titel {background-color: greenyellow;}
+#title {background-color: greenyellow;}
 nav {background-color: yellow}
 #navigation-section {background-color: gold;}
 #contact-section {background-color: orange;}
