@@ -18,6 +18,49 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
+language_default: de
+
+collections_dir: content
+collections:
+  de:
+    output: true
+    permalink: /:collection/:slug
+  en:
+    output: true
+    permalink: /:collection/:slug
+
+defaults:
+  -
+    scope:
+      path: ""
+      type: "pages"
+    values:
+      layout: "page"
+  -
+    scope:
+      path: ""
+      type: "de"
+    values:
+      layout: "page"
+  # -
+  #   scope:
+  #     path: "_de/posts"
+  #   values:
+  #     layout: "post"
+  #     permalink: /de/post/:slug
+  -
+    scope:
+      path: ""
+      type: "en"
+    values:
+      layout: "page"
+  # -
+  #   scope:
+  #     path: "_en/posts"
+  #   values:
+  #     layout: "post"
+  #     permalink: /en/post/:slug
+
 title: TAR-IT
 email: contact@tar-it.com
 description: >- # this means to ignore newlines until "baseurl:"
@@ -28,7 +71,7 @@ twitter_username: tarhyphenit
 github_username: TAR-IT
 
 # Build settings
-theme: minima
+# theme: minima
 plugins:
   - jekyll-feed
 
