@@ -1,0 +1,27 @@
+menu_title:
+  de: Navigationsbereich
+  en: Navigation bar
+
+menu_items:
+  de:
+    - label: Über Mich
+      path: /de/über-mich
+    - label: Blog
+      path: /de/blog
+    - label: Kontakt
+      path: /de/kontakt
+    - label: Impressum
+      path: /de/impressum
+    - label: Datenschutz
+      path: /de/datenschutz
+  en:
+    - label: About Me
+      path: /en/about-me
+    - label: Blog
+      path: /en/blog
+    - label: Contact
+      path: /en/contact
+    - label: Legal Notice
+      path: /en/legal-notice
+    - label: Privacy Policy
+      path: /en/privacy-policy
