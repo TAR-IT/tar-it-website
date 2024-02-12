@@ -23,7 +23,7 @@ html, body {
     font-size: var(--tar-it_font-size);
     background-color: var(--tar-it_color-black);
     color: var(--tar-it_color-white);
-    text-shadow: var(--tar-it_color-white) 0.1px 0.1px;
+    text-shadow: var(--tar-it_color-white) 0.1px;
     height: 100%;
     width: 100%;
     margin: 0;
@@ -69,8 +69,7 @@ header {
   flex-direction: column;
   align-items: center;
   text-align: center;
-  padding: 10px;
-
+  padding: 5px;
 }
 
 #title {
@@ -226,7 +225,7 @@ only screen and (max-width:1080px) {
   }
   
   .navbar-items li a {
-    color: #fff;
+    color: var(--tar-it_color-white);
     text-decoration: none;
   }
 

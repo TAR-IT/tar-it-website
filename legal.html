@@ -68,14 +68,19 @@
         <!-- END HEADER SECTION -->
         
         <!-- START NAVIGATION PANEL -->
-        <nav>
-          <ul>
-            <li><a href="/index.html#about">About</a></li>
-            <li><a href="/index.html#interests">Interests</a></li>
-            <li><a href="/index.html#guideline">Guideline</a></li>
-            <li><a href="/index.html#career">Career</a></li>
-            <li><a href="/index.html#certificates">Certificates</a></li>
-            <li><a href="/index.html#projects">Projects</a></li>
+        <nav class="navbar">
+          <div class="navbar-toggle" onclick="toggleNavbar()">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+          </div>
+          <ul class="navbar-items" id="navbarItems">
+            <li class="navbar-item"><a href="/index.html#about">█ About</a></li>
+            <li class="navbar-item"><a href="/index.html#interests">█ Interests</a></li>
+            <li class="navbar-item"><a href="/index.html#guideline">█ Guideline</a></li>
+            <li class="navbar-item"><a href="/index.html#career">█ Career</a></li>
+            <li class="navbar-item"><a href="/index.html#certificates">█ Certificates</a></li>
+            <li class="navbar-item"><a href="/index.html#projects">█ Projects</a></li>
           </ul>
         </nav>
         <!-- END NAVIGATION PANEL -->
@@ -146,9 +151,9 @@
 
     <!-- START FOOTER-->
     <footer>
-      <ul>
-        <li><a href="/privacy.html" >Privacy Policy</a></li>
-        <li><a href="/legal.html">Legal Notice</a></li>
+      <ul class="footer-items container">
+        <li class="footer-item"><a href="/privacy.html" >Privacy Policy</a></li>
+        <li class="footer-item"><a href="/legal.html">Legal Notice</a></li>
       </ul>
     </footer>
     <!-- END FOOTER -->
