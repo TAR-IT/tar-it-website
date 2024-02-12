@@ -45,10 +45,12 @@ h3 {
   text-transform: uppercase;
 }
 
-img {margin: 20px;}
+img {
+  margin: 4vw;
+}
 
 #wrapper {
-  margin: 10px 50px;
+  padding: 1vwpx 1vw;
   flex-direction: row;
   display: flex;
 }
@@ -75,24 +77,24 @@ header {
   width: fit-content;
 }
 
-.nav-list {
+.navbar-items {
   list-style-type: none;
   padding-left: 0;
 
 }
 
-.nav-link {
+.navbar-item {
   margin: 10px;
 }
 
-.nav-link a {
+.navbar-item a {
   text-decoration: none;
   text-transform: uppercase;
   padding: 5px;
   color: var(--tar-it_color-white);
 }
 
-.nav-link a:hover {
+.navbar-item a:hover {
   background-color: var(--tar-it_color-white);
   color: var(--tar-it_color-black);
 }
@@ -102,7 +104,7 @@ address {
 }
 
 section {
-  box-shadow: var(--tar-it_color-white) 2px 2px 2px 2px;
+  box-shadow: var(--tar-it_color-white) 0.5px 0.5px 0.5px 0.5px;
   padding: 20px;
   margin: 0px 20px;
 }
@@ -122,11 +124,11 @@ section {
 }
 
 .containeritem-year {
-  width: 20%;
+  width: 30%;
 }
 
 .containeritem-info {
-  width: 80%;
+  width: 70%;
 }
 
 footer {
@@ -135,6 +137,28 @@ footer {
   position: sticky;
   margin: 0;
   padding: 10px;
+}
+
+.footer-items {
+  list-style-type: none;
+  padding-left: 0;
+
+}
+
+.footer-item {
+  margin: 10px;
+}
+
+.footer-item a {
+  text-decoration: none;
+  text-transform: uppercase;
+  padding: 5px;
+  color: var(--tar-it_color-white);
+}
+
+.footer-item a:hover {
+  background-color: var(--tar-it_color-white);
+  color: var(--tar-it_color-black);
 }
 
 /* ---------------------- WEBVIEW STYLES ---------------------- */
@@ -152,7 +176,6 @@ only screen and (max-width:1080px) {
   h3 {
     scroll-margin-top: 12em; /* prevents the content to dissapear behind the header when using the nav in mobile */
   }
-  
 
   #wrapper {
     flex-direction: column;
@@ -166,19 +189,50 @@ only screen and (max-width:1080px) {
     position: sticky;
   }
 
-  .nav-list {
+  .navbar {
     display: flex;
-    justify-content: center;
-    margin: 0;
-    list-style-type: none;
-    padding-left: 0;
-  
+    justify-content: space-between;
+    align-items: center;
+    color: #fff;
   }
   
-  .nav-link {
-    text-align: center;
+  .navbar-toggle {
+    cursor: pointer;
+    padding: 10px;
+  }
+  
+  .bar {
+    width: 25px;
+    height: 3px;
+    background-color: #fff;
+    margin: 5px 0;
+  }
+  
+  .navbar-items {
+    display: none;
+    list-style-type: none;
+    margin: 0;
+    padding-left: 0;
+  }
+  
+  .navbar-items.show {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+  }
+  
+  .navbar-items li {
+    padding: 10px;
+  }
+  
+  .navbar-items li a {
+    color: #fff;
+    text-decoration: none;
   }
 
+  .mobile-flex-column {
+    flex-direction: column;
+  }
 }
 
 /* ---------------------- TYPEWRITER EFFECT ---------------------- */

@@ -70,14 +70,19 @@
         <!-- END HEADER SECTION -->
         
         <!-- START NAVIGATION PANEL -->
-        <nav>
-          <ul class="nav-list">
-            <li class="nav-link"><a href="/index.html#about">█ About</a></li>
-            <li class="nav-link"><a href="/index.html#interests">█ Interests</a></li>
-            <li class="nav-link"><a href="/index.html#guideline">█ Guideline</a></li>
-            <li class="nav-link"><a href="/index.html#career">█ Career</a></li>
-            <li class="nav-link"><a href="/index.html#certificates">█ Certificates</a></li>
-            <li class="nav-link"><a href="/index.html#projects">█ Projects</a></li>
+        <nav class="navbar">
+          <div class="navbar-toggle" onclick="toggleNavbar()">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+          </div>
+          <ul class="navbar-items" id="navbarItems">
+            <li class="navbar-item"><a href="/index.html#about">█ About</a></li>
+            <li class="navbar-item"><a href="/index.html#interests">█ Interests</a></li>
+            <li class="navbar-item"><a href="/index.html#guideline">█ Guideline</a></li>
+            <li class="navbar-item"><a href="/index.html#career">█ Career</a></li>
+            <li class="navbar-item"><a href="/index.html#certificates">█ Certificates</a></li>
+            <li class="navbar-item"><a href="/index.html#projects">█ Projects</a></li>
           </ul>
         </nav>
         <!-- END NAVIGATION PANEL -->
@@ -94,12 +99,12 @@
         <h3 id="about">About Me</h3>
         <section>
 
-          <div class="container box">
+          <div class="container mobile-flex-column">
             <img src="/img/tar.png" alt="Portrait of me">
             <div>
 
               <p>
-                Hi! I'm a freelancer from Germany who just loves creating a network of competent providers to offer customized solutions for the 
+                Hi! I'm Tobi, from Germany, and I'm passionate about creating a network of competent providers to offer customized solutions for the 
                 digital presence of companies, associations and other projects. I am looking forward 
                 to challenges that require my skills and creative thinking to manifest identities and 
                 public appearances.<br>
@@ -338,7 +343,7 @@
         <section>
 
           <div class="container">
-            <img src="/img/logo/brokenvibestudios-logo.png" alt="2sotypen Logo">
+            <img width="200vw" src="/img/logo/brokenvibestudios-logo.png" alt="2sotypen Logo">
             <div>
               <h4>BROKEN VIBE STUDIOS</h4>
               <p>
@@ -348,7 +353,7 @@
           </div>
 
           <div class="container-reversed">
-            <img src="/img/logo/2sotypen-logo.png" alt="2sotypen Logo">
+            <img width="200vw" src="/img/logo/2sotypen-logo.png" alt="2sotypen Logo">
             <div>
               <h4>2sotypen</h4>
               <p>
@@ -360,7 +365,7 @@
           </div>
 
           <div class="container">
-            <img src="/img/logo/nonation-logo.png" alt="NONATION Logo">
+            <img width="200vw" src="/img/logo/nonation-logo.png" alt="NONATION Logo">
             <div>
               <h4>NONATION</h4>
               <p>
@@ -374,7 +379,7 @@
           </div>
 
           <div class="container-reversed">
-            <img src="/img/logo/rollbrettklub-logo.png" alt="rollbrettklub Logo">
+            <img width="200vw" src="/img/logo/rollbrettklub-logo.png" alt="rollbrettklub Logo">
             <div>
               <h4>rollbrettklub</h4>
               <p>
@@ -392,7 +397,7 @@
           </div>
 
           <div class="container">
-            <img src="/img/logo/insideout-logo.png" alt="INSIDEOUT Logo">
+            <img width="200vw" src="/img/logo/insideout-logo.png" alt="INSIDEOUT Logo">
             <div>
               <h4>INSIDEOUT</h4>
               <p>
@@ -405,7 +410,7 @@
           </div>
 
           <div class="container-reversed">
-            <img src="/img/logo/autonomstrom-logo.png" alt="autonomstrom Logo">
+            <img width="200vw" src="/img/logo/autonomstrom-logo.png" alt="autonomstrom Logo">
             <div>
               <h4>autonomstrom</h4>
               <p>
@@ -427,9 +432,9 @@
 
     <!-- START FOOTER-->
     <footer>
-      <ul class="nav-list container">
-        <li class="nav-link"><a href="/privacy.html" >Privacy Policy</a></li>
-        <li class="nav-link"><a href="/legal.html">Legal Notice</a></li>
+      <ul class="footer-items container">
+        <li class="footer-item"><a href="/privacy.html" >Privacy Policy</a></li>
+        <li class="footer-item"><a href="/legal.html">Legal Notice</a></li>
       </ul>
     </footer>
     <!-- END FOOTER -->
