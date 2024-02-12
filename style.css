@@ -1,0 +1,228 @@
+/* ---------------------- FONTS ---------------------- */
+
+@font-face {
+    font-family: 'SCP'; /* labels the font family */
+    src: url('/font/SourceCodePro-4alW.ttf'); /* sets the link to the Standard Font file of the websites font */
+    src: url('/font/SourceCodePro-4alW.eot') format('embedded-opentype'), /* sets the link to the Embedded OpenType Font file of the websites font */
+         url('/font/SourceCodePro-4alW.woff2') format('woff2'), /* sets the link to the WOFF2 Font file of the websites font */
+         url('/font/SourceCodePro-4alW.woff') format('woff'), /* sets the link to the WOFF Font file of the websites font */
+         url('/font/SourceCodePro-4alW.ttf')  format('truetype'), /* sets the link to the TrueType Font file of the websites font */
+         url('/font/SourceCodePro-4alW.svg') format('svg'); /* sets the link to the svg file of the websites font */
+  }
+  
+/* ---------------------- GLOBAL STYLES ---------------------- */
+
+html, body {
+    --tar-it_color-white: #FFFFFF; /* defines a variable for the color white */
+    --tar-it_color-black: #000000; /* defines a variable for the color black */
+    --tar-it_color-darkgrey: #adb3bc; /* defines a variable for the color dark grey */
+    --tar-it_color-lightgrey: #d8d7d5; /* defines a variable for the color light grey */
+    --tar-it_font-family: 'SCP', Arial, sans-serif; /* defines a variable for the font family of website fonts */
+    --tar-it_font-size: calc(0.7rem + 0.4vw); /* resizes the font size depending on the window size */
+    font-family: var(--tar-it_font-family); /* sets the global font */
+    font-size: var(--tar-it_font-size);
+    background-color: var(--tar-it_color-black);
+    color: var(--tar-it_color-white);
+    text-shadow: var(--tar-it_color-white) 0.1px 0.1px;
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+  font-size: calc(2rem + 1vw);
+  text-transform: uppercase;
+}
+
+h2 {
+  font-size: calc(0.9rem + 0.4vw);
+  text-transform: uppercase;
+}
+
+h3 {
+  padding: 10px;
+  text-transform: uppercase;
+}
+
+img {margin: 20px;}
+
+#wrapper {
+  margin: 10px 50px;
+  flex-direction: row;
+  display: flex;
+}
+
+#sidebar {
+  background-color: var(--tar-it_color-black);
+  margin: 0;
+  top: 0;
+  left: 0;
+  height: fit-content;
+  position: sticky;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 10px;
+
+}
+
+#title {
+  width: fit-content;
+}
+
+.nav-list {
+  list-style-type: none;
+  padding-left: 0;
+
+}
+
+.nav-link {
+  margin: 10px;
+}
+
+.nav-link a {
+  text-decoration: none;
+  text-transform: uppercase;
+  padding: 5px;
+  color: var(--tar-it_color-white);
+}
+
+.nav-link a:hover {
+  background-color: var(--tar-it_color-white);
+  color: var(--tar-it_color-black);
+}
+
+address {
+  text-align: center;
+}
+
+section {
+  box-shadow: var(--tar-it_color-white) 2px 2px 2px 2px;
+  padding: 20px;
+  margin: 0px 20px;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.container-reversed {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  justify-content: center;
+}
+
+.containeritem-year {
+  width: 20%;
+}
+
+.containeritem-info {
+  width: 80%;
+}
+
+footer {
+  background-color: var(--tar-it_color-black);
+  bottom: 0;
+  position: sticky;
+  margin: 0;
+  padding: 10px;
+}
+
+/* ---------------------- WEBVIEW STYLES ---------------------- */
+
+@media only screen and (device-width: 1281px),
+only screen and (min-width:1081px) {
+/* Placeholder */
+}
+
+/* ---------------------- MOBILE VIEW STYLES ---------------------- */
+
+@media only screen and (device-width: 1280px),
+only screen and (max-width:1080px) {
+
+  h3 {
+    scroll-margin-top: 12em; /* prevents the content to dissapear behind the header when using the nav in mobile */
+  }
+  
+
+  #wrapper {
+    flex-direction: column;
+  }
+
+  #sidebar {
+    background-color: var(--tar-it_color-black);
+    margin: 0;
+    top: 0;
+    height: fit-content;
+    position: sticky;
+  }
+
+  .nav-list {
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    list-style-type: none;
+    padding-left: 0;
+  
+  }
+  
+  .nav-link {
+    text-align: center;
+  }
+
+}
+
+/* ---------------------- TYPEWRITER EFFECT ---------------------- */
+
+.typewriter {
+    margin-top: 50px;
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    border-right: .60em solid var(--tar-it_color-white); /* The typwriter cursor */
+    white-space: nowrap; /* Keeps the content on a single line */
+    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+    letter-spacing: .2em; /* Adjust as needed */
+    animation: 
+      typing 3s steps(7, end),
+      blink-caret .5s step-end infinite;
+}
+   
+/* The typing effect */
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: var(--tar-it_color-white) }
+}
+
+/* ---------------------- MAINTENANCE STYLES ---------------------- */
+/* 
+html {background-color: #870a0a;}
+head {background-color: rgb(177, 112, 112);}
+body {background-color: grey;}
+#wrapper {background-color: turquoise;}
+div {background-color: green;}
+.container {background-color: darkgoldenrod;}
+.container-reversed {background-color: goldenrod;}
+.containeritem-year {}
+.containeritem-info {}
+#sidebar {background-color: rgb(21, 21, 151);}
+header {background-color: #870a0a;}
+#title {background-color: greenyellow;}
+nav {background-color: yellow}
+.nav-list {background-color: azure;}
+.nav-link {background-color: antiquewhite;}
+address {background-color: aquamarine;}
+footer {background-color: aliceblue;} */
