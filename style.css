@@ -24,10 +24,12 @@ html, body {
     background-color: var(--tar-it_color-black);
     color: var(--tar-it_color-white);
     text-shadow: var(--tar-it_color-white) 0.1px;
-    height: 100%;
-    width: 100%;
     margin: 0;
     padding: 0;
+}
+
+body {
+  padding: 5vw;
 }
 
 h1 {
@@ -50,7 +52,6 @@ img {
 }
 
 #wrapper {
-  padding: 1vwpx 1vw;
   flex-direction: row;
   display: flex;
 }
@@ -102,6 +103,9 @@ address {
   text-align: center;
 }
 
+main {
+  padding: 5vw;
+}
 
 section {
   border-radius: 10px; /* Adjust border radius as needed */
@@ -124,12 +128,24 @@ section {
   justify-content: center;
 }
 
-.containeritem-year {
+.container-item-interest {
+  width: 50%;
+}
+
+.container-item-year {
   width: 30%;
 }
 
-.containeritem-info {
+.container-item-info {
   width: 70%;
+}
+
+.guideline-gif {
+  width: 30%
+}
+
+.projects-img {
+  width: 20vw;
 }
 
 footer {
