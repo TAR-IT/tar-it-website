@@ -12,7 +12,7 @@
   
 /* ---------------------- GLOBAL STYLES ---------------------- */
 
-html, body {
+html {
     --tar-it_color-white: #FFFFFF; /* defines a variable for the color white */
     --tar-it_color-black: #000000; /* defines a variable for the color black */
     --tar-it_color-darkgrey: #adb3bc; /* defines a variable for the color dark grey */
@@ -29,7 +29,11 @@ html, body {
 }
 
 body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   padding: 5vw;
+  margin: 0;
 }
 
 h1 {
@@ -161,19 +165,23 @@ section {
 
 footer {
   background-color: var(--tar-it_color-black);
-  bottom: 0;
+  border-radius: 10px;
+  width: fit-content;
   position: sticky;
+  bottom: 0;
   margin: 0;
+  padding: 5px;
 }
 
 .footer-items {
   list-style-type: none;
-  padding-left: 0;
+  padding: 0;
+  margin: 0;
 
 }
 
 .footer-item {
-  margin: 10px;
+  padding: 10px;
 }
 
 .footer-item a {
