@@ -75,6 +75,8 @@ header {
 
 #title {
   width: fit-content;
+  text-decoration: none;
+  color: var(--tar-it_color-white);
 }
 
 .navbar-items {
