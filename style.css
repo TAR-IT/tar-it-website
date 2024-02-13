@@ -95,16 +95,18 @@ header {
   color: var(--tar-it_color-white);
 }
 
+/* Style for the active navbar item */
+.navbar-item a.active {
+  border-radius: 10px;
+  box-shadow: 0px 2px 5px var(--tar-it_color-white);
+}
+
 .navbar-item a:hover {
   background-color: var(--tar-it_color-white);
   color: var(--tar-it_color-black);
 }
 
-/* Style for the active navbar item */
-.navbar-item.active {
-  border-radius: 10px;
-  box-shadow: 0px 2px 5px var(--tar-it_color-white);
-}
+
 
 address {
   text-align: center;

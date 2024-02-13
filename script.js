@@ -29,8 +29,11 @@ document.addEventListener("DOMContentLoaded", function() {
 
     // Loop through all the navbar items
     navbarItems.forEach(navbarItem => {
+      // Get the anchor tag within the navbar item
+      const anchorTag = navbarItem.querySelector('a');
+
       // Get the ID of the section corresponding to the navbar item
-      const sectionId = navbarItem.querySelector('a').getAttribute('href').substring(1);
+      const sectionId = anchorTag.getAttribute('href').substring(1);
 
       // Get the corresponding section
       const section = document.getElementById(sectionId);
@@ -42,11 +45,11 @@ document.addEventListener("DOMContentLoaded", function() {
 
       // Add or remove a class to highlight the active navbar item
       if (isInViewport) {
-        navbarItem.classList.add('active');
-        currentHighlightedItem = navbarItem; // Update the currently highlighted item
+        anchorTag.classList.add('active');
+        currentHighlightedItem = anchorTag; // Update the currently highlighted item
         isItemHighlighted = true;
       } else {
-        navbarItem.classList.remove('active');
+        anchorTag.classList.remove('active');
       }
     });
 
