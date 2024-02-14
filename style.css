@@ -15,7 +15,7 @@
 html {
     --tar-it_color-white: #FFFFFF; /* defines a variable for the color white */
     --tar-it_color-black: #000000; /* defines a variable for the color black */
-    --tar-it_color-darkgrey: #323232; /* defines a variable for the color dark grey */
+    --tar-it_color-darkgrey: #131313; /* defines a variable for the color dark grey */
     --tar-it_color-lightgrey: #d8d7d5; /* defines a variable for the color light grey */
     --tar-it_font-family: 'SCP', Arial, sans-serif; /* defines a variable for the font family of website fonts */
     --tar-it_font-size: calc(0.7rem + 0.4vw); /* resizes the font size depending on the window size */
@@ -155,6 +155,7 @@ main {
   box-shadow: 0 0 3px var(--tar-it_color-darkgrey);
   padding: 10px;
   margin: 10px;
+  border-radius: .5%;
 }
 
 .box:hover {
