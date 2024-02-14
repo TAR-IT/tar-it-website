@@ -32,7 +32,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 5vw;
+  padding: 1vw;
   margin: 0;
 }
 
@@ -52,7 +52,7 @@ h3 {
 }
 
 img {
-  margin: 4vw;
+  margin: 0.5vw;
 }
 
 #wrapper {
@@ -101,8 +101,8 @@ header {
   color: var(--tar-it_color-white);
 }
 
-/* Style for the active navbar item */
-.navbar-item a.active {
+
+.navbar-item a.active { /* STYLES FOR SHOWING LOCATION AT NAVBAR */
   border-radius: 10px;
   box-shadow: 0px 2px 5px var(--tar-it_color-white);
 }
@@ -112,51 +112,49 @@ header {
   color: var(--tar-it_color-black);
 }
 
-
-
 address {
   text-align: center;
+}
+
+.contact-icon {
+  width: 6vw;
 }
 
 main {
   padding: 5vw;
 }
 
-section {
-  border-radius: 10px; /* Adjust border radius as needed */
-  box-shadow: 0px 4px 8px var(--tar-it_color-white); /* Adjust shadow properties as needed */
-  padding: 20px;
-  margin: 0px 20px;
+.flex {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.flex-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.flex-row-reverse {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: center;
+  align-items: center;
+  text-align: end;
 }
 
 .container {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-}
-
-.container-reversed {
-  display: flex;
-  flex-direction: row-reverse;
-  align-items: center;
-  justify-content: center;
-}
-
-.container-item-interest {
-  width: 50%;
-}
-
-.container-item-year {
-  width: 30%;
-}
-
-.container-item-info {
-  width: 70%;
+  border-radius: 10px;
+  box-shadow: 0px 4px 8px var(--tar-it_color-white);
+  padding: 20px;
 }
 
 .guideline-gif {
-  width: 30%
+  margin: 20px;
+  width: 15vw;
+  height: 15vw;
 }
 
 .projects-img {
@@ -166,22 +164,20 @@ section {
 footer {
   background-color: var(--tar-it_color-black);
   border-radius: 10px;
+  text-align: center;
   width: fit-content;
   position: sticky;
   bottom: 0;
-  margin: 0;
-  padding: 5px;
 }
 
 .footer-items {
   list-style-type: none;
   padding: 0;
   margin: 0;
-
 }
 
 .footer-item {
-  padding: 10px;
+  padding-top: 10px;
 }
 
 .footer-item a {
@@ -197,6 +193,10 @@ footer {
   color: var(--tar-it_color-black);
 }
 
+#copyright {
+  font-size: smaller;
+}
+
 /* ---------------------- WEBVIEW STYLES ---------------------- */
 
 @media only screen and (device-width: 1281px),
@@ -210,7 +210,7 @@ only screen and (min-width:1081px) {
 only screen and (max-width:1080px) {
 
   h3 {
-    scroll-margin-top: 12em; /* prevents the content to dissapear behind the header when using the nav in mobile */
+    scroll-margin-top: 12em; /* PREVENTS TEXT HIDDEN BEHIND HEADER IN MOBILE */
   }
 
   #wrapper {
@@ -225,6 +225,7 @@ only screen and (max-width:1080px) {
     position: sticky;
   }
 
+  /* START MOBILE NAVBAR STYLES */
   .navbar {
     display: flex;
     justify-content: space-between;
@@ -265,9 +266,14 @@ only screen and (max-width:1080px) {
     color: var(--tar-it_color-white);
     text-decoration: none;
   }
+  /* END MOBILE NAVBAR STYLES */
 
-  .mobile-flex-column {
+  .flex {
+    display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
   }
 }
 
@@ -304,10 +310,11 @@ head {background-color: rgb(177, 112, 112);}
 body {background-color: grey;}
 #wrapper {background-color: turquoise;}
 div {background-color: green;}
+h1, h2, h3, h4, h5, h6 {background-color: aqua;}
 .container {background-color: darkgoldenrod;}
 .container-reversed {background-color: goldenrod;}
-.containeritem-year {}
-.containeritem-info {}
+.containeritem-year {background-color: #870a0a;}
+.containeritem-info {background-color: saddlebrown;}
 #sidebar {background-color: rgb(21, 21, 151);}
 header {background-color: #870a0a;}
 #title {background-color: greenyellow;}
