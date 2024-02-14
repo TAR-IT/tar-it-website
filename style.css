@@ -221,7 +221,7 @@ only screen and (min-width:1081px) {
 only screen and (max-width:1080px) {
 
   h3 {
-    scroll-margin-top: 12em; /* PREVENTS TEXT HIDDEN BEHIND HEADER IN MOBILE */
+    scroll-margin-top: 9em; /* PREVENTS TEXT HIDDEN BEHIND HEADER IN MOBILE */
   }
 
   #wrapper {
